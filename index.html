@@ -1,325 +1,177 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>大貫石材工業株式会社[要確認] - サイトリニューアル案</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-      body {
-        font-family: "Noto Sans JP", sans-serif;
-        scroll-behavior: smooth;
-      }
-      .hero-pattern {
-        /* 背景画像のダミー（推測です）実際の施工写真に差し替えることを推奨します */
-        background-color: #2d3748;
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80");
-        background-size: cover;
-        background-position: center;
-      }
+        body { font-family: 'Noto Sans JP', sans-serif; scroll-behavior: smooth; }
+        .hero-pattern {
+            /* 背景画像のダミー（推測です）実際の施工写真に差し替えることを推奨します */
+            background-color: #2d3748;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
     </style>
-  </head>
-  <body class="bg-gray-50 text-gray-800">
-    <header
-      class="bg-white shadow-sm fixed w-full z-50 top-0"
-      data-aos="fade-down"
-      data-aos-duration="500"
-    >
-      <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"
-      >
-        <div class="font-bold text-xl text-gray-800">
-          大貫石材工業株式会社<span
-            class="text-xs text-gray-400 font-normal ml-1"
-            >[要確認]</span
-          >
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm fixed w-full z-50 top-0" data-aos="fade-down" data-aos-duration="500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="font-bold text-xl text-gray-800">
+                大貫石材工業株式会社<span class="text-xs text-gray-400 font-normal ml-1">[要確認]</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">ホーム</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition">事業内容</a>
+                <a href="#company" class="text-gray-600 hover:text-blue-600 transition">会社概要</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">お問い合わせ</a>
+            </nav>
+            <div class="md:hidden text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
         </div>
-        <nav class="hidden md:flex space-x-8">
-          <a href="#" class="text-gray-600 hover:text-blue-600 transition"
-            >ホーム</a
-          >
-          <a
-            href="#services"
-            class="text-gray-600 hover:text-blue-600 transition"
-            >事業内容</a
-          >
-          <a
-            href="#company"
-            class="text-gray-600 hover:text-blue-600 transition"
-            >会社概要</a
-          >
-          <a
-            href="#contact"
-            class="text-gray-600 hover:text-blue-600 transition"
-            >お問い合わせ</a
-          >
-        </nav>
-        <div class="md:hidden text-gray-600">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </div>
-      </div>
     </header>
 
-    <section
-      class="mt-16 hero-pattern h-[60vh] flex items-center justify-center"
-    >
-      <div
-        class="text-center px-4 max-w-4xl mx-auto text-white"
-        data-aos="zoom-in"
-        data-aos-duration="1000"
-      >
-        <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-          石の特徴を活かし、<br class="md:hidden" />高級感のある空間を。
-        </h1>
-        <p
-          class="text-lg md:text-xl text-gray-200 mb-8"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
-          世界各地から採れる数百種類に及ぶ天然石を使用し、重厚な雰囲気を醸し出す石工事を提供します。
-        </p>
-        <a
-          href="#contact"
-          data-aos="fade-up"
-          data-aos-delay="500"
-          class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition shadow-lg transform hover:scale-105"
-          >お問い合わせはこちら</a
-        >
-      </div>
+    <section class="mt-16 hero-pattern h-[60vh] flex items-center justify-center">
+        <div class="text-center px-4 max-w-4xl mx-auto text-white" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">石の特徴を活かし、<br class="md:hidden">高級感のある空間を。</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-8" data-aos="fade-up" data-aos-delay="300">世界各地から採れる数百種類に及ぶ天然石を使用し、重厚な雰囲気を醸し出す石工事を提供します。</p>
+            <a href="#contact" data-aos="fade-up" data-aos-delay="500" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition shadow-lg transform hover:scale-105">お問い合わせはこちら</a>
+        </div>
     </section>
 
     <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16" data-aos="fade-up">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4">主な対応工事</h2>
-        <div
-          class="w-16 h-1 bg-blue-600 mx-auto transition-all duration-500 hover:w-32"
-        ></div>
-      </div>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">主な対応工事</h2>
+            <div class="w-16 h-1 bg-blue-600 mx-auto transition-all duration-500 hover:w-32"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="stone.html" data-aos="fade-up" data-aos-delay="100" class="block bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2 group">
+                <div class="text-blue-600 mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-800">石工事全般</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">石工事とは、様々な性質や特徴を持つ天然石を加工して取り付ける工事です。壁面や床面など、用途に合わせて最適な施工をご提案します。<br><span class="text-blue-600 font-bold mt-2 inline-block group-hover:translate-x-2 transition-transform duration-300">詳細を見る &rarr;</span></p>
+            </a>
+            
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2">
+                <div class="text-blue-600 mb-4 hover:scale-110 transition-transform duration-300">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">加工と表面仕上げ</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">一次加工・二次加工を経て、現場に必要なサイズに切断・研磨します。ツヤや色調、凹凸感など、石固有の特徴を引き出す表面仕上げを行います。</p>
+            </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <a
-          href="stone.html"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          class="block bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2 group"
-        >
-          <div
-            class="text-blue-600 mb-4 group-hover:scale-110 transition-transform duration-300"
-          >
-            <svg
-              class="w-12 h-12"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3 text-gray-800">石工事全般</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            石工事とは、様々な性質や特徴を持つ天然石を加工して取り付ける工事です。壁面や床面など、用途に合わせて最適な施工をご提案します。<br /><span
-              class="text-blue-600 font-bold mt-2 inline-block group-hover:translate-x-2 transition-transform duration-300"
-              >詳細を見る &rarr;</span
-            >
-          </p>
-        </a>
-
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          class="bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2"
-        >
-          <div
-            class="text-blue-600 mb-4 hover:scale-110 transition-transform duration-300"
-          >
-            <svg
-              class="w-12 h-12"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">加工と表面仕上げ</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            一次加工・二次加工を経て、現場に必要なサイズに切断・研磨します。ツヤや色調、凹凸感など、石固有の特徴を引き出す表面仕上げを行います。
-          </p>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2">
+                <div class="text-blue-600 mb-4 hover:scale-110 transition-transform duration-300">
+                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">強度計算・メンテナンス</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">施工面の状況や高さ、石の厚みを考慮した強度計算を行います。また、建築において最も重要な「水対策」を含めたメンテナンスのご相談も承ります。</p>
+            </div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          data-aos-delay="300"
-          class="bg-white rounded-lg shadow-md hover:shadow-2xl transition-all duration-300 p-8 transform hover:-translate-y-2"
-        >
-          <div
-            class="text-blue-600 mb-4 hover:scale-110 transition-transform duration-300"
-          >
-            <svg
-              class="w-12 h-12"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="text-xl font-bold mb-3">強度計算・メンテナンス</h3>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            施工面の状況や高さ、石の厚みを考慮した強度計算を行います。また、建築において最も重要な「水対策」を含めたメンテナンスのご相談も承ります。
-          </p>
+        <div data-aos="fade-up" data-aos-delay="400" class="mt-12 text-center bg-gray-100 p-6 rounded-lg inline-block w-full">
+            <p class="text-gray-700 font-bold">その他、とび・土工工事にも対応しております。</p>
         </div>
-      </div>
-
-      <div
-        data-aos="fade-up"
-        data-aos-delay="400"
-        class="mt-12 text-center bg-gray-100 p-6 rounded-lg inline-block w-full"
-      >
-        <p class="text-gray-700 font-bold">
-          その他、とび・土工工事にも対応しております。
-        </p>
-      </div>
     </section>
 
     <section class="bg-gray-100 py-20 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="bg-white rounded-2xl shadow-lg flex flex-col lg:flex-row overflow-hidden"
-        >
-          <div
-            id="company"
-            data-aos="fade-right"
-            class="lg:w-1/2 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-gray-200"
-          >
-            <h2 class="text-2xl font-bold mb-8 text-gray-800">会社概要</h2>
-            <table class="w-full text-left text-gray-600 text-sm md:text-base">
-              <tbody class="divide-y divide-gray-200">
-                <tr>
-                  <th class="py-4 font-bold w-1/3">会社名</th>
-                  <td class="py-4">
-                    大貫石材工業株式会社<span class="text-xs text-gray-400 ml-1"
-                      >[要確認]</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <th class="py-4 font-bold">代表者</th>
-                  <td class="py-4">不明</td>
-                </tr>
-                <tr>
-                  <th class="py-4 font-bold">所在地</th>
-                  <td class="py-4">
-                    東京都新宿区西新宿1-15-4<span
-                      class="text-xs text-gray-400 ml-1"
-                      >[要確認]</span
-                    >
-                  </td>
-                </tr>
-                <tr>
-                  <th class="py-4 font-bold">主な事業内容</th>
-                  <td class="py-4">とび・土工工事、石工事</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-lg flex flex-col lg:flex-row overflow-hidden">
+                
+                <div id="company" data-aos="fade-right" class="lg:w-1/2 p-8 md:p-12 border-b lg:border-b-0 lg:border-r border-gray-200">
+                    <h2 class="text-2xl font-bold mb-8 text-gray-800">会社概要</h2>
+                    <table class="w-full text-left text-gray-600 text-sm md:text-base mb-8">
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <th class="py-4 font-bold w-1/3">会社名</th>
+                                <td class="py-4">大貫石材工業株式会社<span class="text-xs text-gray-400 ml-1">[要確認]</span></td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">代表者名</th>
+                                <td class="py-4">中山 知（ナカヤマ トモ）<span class="text-xs text-gray-400 ml-1">[要確認]</span></td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">所在地</th>
+                                <td class="py-4">
+                                    <div class="mb-3">
+                                        〒160-0023<span class="text-xs text-gray-400 ml-1">[要確認]</span><br>
+                                        東京都新宿区西新宿1-15-4<span class="text-xs text-gray-400 ml-1">[要確認]</span>
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        【他の拠点】<br>
+                                        〒162-0041<span class="text-xs text-gray-400 ml-1">[要確認]</span><br>
+                                        東京都新宿区早稲田鶴巻町524<span class="text-xs text-gray-400 ml-1">[要確認]</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">電話番号</th>
+                                <td class="py-4">03-3343-6321<span class="text-xs text-gray-400 ml-1">[要確認]</span></td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">資本金</th>
+                                <td class="py-4">10,000千円<span class="text-xs text-gray-400 ml-1">[要確認]</span></td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">建設業許可番号</th>
+                                <td class="py-4">東京都知事許可 第130763号<span class="text-xs text-gray-400 ml-1">[要確認]</span></td>
+                            </tr>
+                            <tr>
+                                <th class="py-4 font-bold">業務内容</th>
+                                <td class="py-4">とび・土工工事、石工事</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-          <div
-            id="contact"
-            data-aos="fade-left"
-            class="lg:w-1/2 p-8 md:p-12 bg-blue-50 flex flex-col justify-center"
-          >
-            <h2 class="text-2xl font-bold mb-4 text-blue-900">お問い合わせ</h2>
-            <p class="text-gray-600 mb-8 leading-relaxed">
-              ご不明な点がございましたら、まずはお気軽にご相談下さい。用途と石材の性質を比較検討し、最適なご提案をいたします。
-            </p>
+                    <div class="w-full h-64 bg-gray-200 rounded-lg overflow-hidden shadow-inner">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=東京都新宿区西新宿1-15-4&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
 
-            <div
-              class="bg-white p-6 rounded-lg shadow-sm text-center transform transition duration-500 hover:scale-105"
-            >
-              <p class="text-sm text-gray-500 mb-2 font-bold">
-                お電話でのご相談はこちら
-              </p>
-              <div
-                class="text-3xl md:text-4xl font-bold text-blue-700 flex items-center justify-center"
-              >
-                <svg
-                  class="w-8 h-8 mr-2 animate-bounce"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  ></path>
-                </svg>
-                03-3343-6321<span class="text-sm font-normal text-gray-400 ml-2"
-                  >[要確認]</span
-                >
-              </div>
-              <p class="text-xs text-gray-500 mt-4">
-                営業時間：平日 9:00〜18:00（推測です）
-              </p>
+                <div id="contact" data-aos="fade-left" class="lg:w-1/2 p-8 md:p-12 bg-blue-50 flex flex-col justify-center">
+                    <h2 class="text-2xl font-bold mb-4 text-blue-900">お問い合わせ</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">ご不明な点がございましたら、まずはお気軽にご相談下さい。用途と石材の性質を比較検討し、最適なご提案をいたします。</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm text-center transform transition duration-500 hover:scale-105">
+                        <p class="text-sm text-gray-500 mb-2 font-bold">お電話でのご相談はこちら</p>
+                        <div class="text-3xl md:text-4xl font-bold text-blue-700 flex items-center justify-center">
+                            <svg class="w-8 h-8 mr-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            03-3343-6321<span class="text-sm font-normal text-gray-400 ml-2">[要確認]</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4">営業時間：平日 9:00〜18:00（推測です）</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <footer class="bg-gray-800 py-8 border-t border-gray-700 text-center">
-      <p class="text-gray-400 text-sm">
-        &copy; 2026<span class="text-xs text-gray-500 ml-1">[要確認]</span>
-        大貫石材工業株式会社 All Rights Reserved.
-      </p>
+        <p class="text-gray-400 text-sm">&copy; 2026<span class="text-xs text-gray-500 ml-1">[要確認]</span> 大貫石材工業株式会社 All Rights Reserved.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // アニメーションの初期化
-      AOS.init({
-        duration: 800, // アニメーションにかかる時間（ミリ秒）
-        once: true, // スクロール時に一度だけアニメーションを実行する
-        offset: 100, // アニメーションが開始されるスクロール位置のオフセット
-      });
+        // アニメーションの初期化
+        AOS.init({
+            duration: 800, // アニメーションにかかる時間（ミリ秒）
+            once: true,    // スクロール時に一度だけアニメーションを実行する
+            offset: 100    // アニメーションが開始されるスクロール位置のオフセット
+        });
     </script>
-  </body>
+</body>
 </html>
